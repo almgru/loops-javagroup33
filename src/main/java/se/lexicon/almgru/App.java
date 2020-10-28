@@ -12,7 +12,7 @@ public class App
     {
         Scanner scanner = new Scanner(System.in);
 
-        while (true) {
+        do {
             System.out.println("How old are you?");
             int age = scanner.nextInt();
 
@@ -22,6 +22,6 @@ public class App
                 System.out.println("You are a child.");
                 break;
             }
-        }
+        } while (true);
     }
 }
