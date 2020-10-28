@@ -12,13 +12,16 @@ public class App
     {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("How old are you?");
-        int age = scanner.nextInt();
+        while (true) {
+            System.out.println("How old are you?");
+            int age = scanner.nextInt();
 
-        if (age >= 18) {
-            System.out.println("You are an adult.");
-        } else {
-            System.out.println("You are a child.");
+            if (age >= 18) {
+                System.out.println("You are an adult.");
+            } else {
+                System.out.println("You are a child.");
+                break;
+            }
         }
     }
 }
